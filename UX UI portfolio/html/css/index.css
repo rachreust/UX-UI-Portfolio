@@ -1,0 +1,301 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Grid */
+
+#heroGrid {
+  margin: 0px;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  background-color: grey;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr fr;
+  
+}
+
+
+
+#headline {
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 5px solid black;
+  position: absolute;
+  top: 200px;
+  padding: 25px;
+  max-width: 600px;
+  z-index: 100;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+/* Category Grid*/
+
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  height: 70vh;
+  grid-template-rows: 600px 600px;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-areas:
+  "piechart chartText"
+  ;
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.piechart {
+  margin-top: 70px;
+  margin-left: 50px;
+ 
+ 
+
+}
+.chartText {
+  margin-top: 70px;
+ 
+
+}
+
+.chartText ul li {
+  color: black;
+  text-align: left;
+  padding: 10px;
+  font-size: larger;
+  font-weight: bold;
+  list-style: none;
+
+}
+
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+}
+
+
+
+#infoGrid {
+  margin: 0px 5%;
+  display: grid;
+  height: 60vh;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-areas:
+  "aboutText aboutBow"
+  ;
+}
+
+
+
+.aboutBox {
+  margin-top: 50px;
+  padding: 10px;
+ 
+
+}
+.aboutText {
+  margin-top: 50px;
+  
+ 
+
+}
+
+/* NAV */
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0px;
+  background-color: black;
+}
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+  color: white;
+  padding-left: 50px;
+}
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.resume {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+  color: white;
+  padding: 10px;
+ 
+}
+.resume img {
+  margin: 15px;
+  width: 50px;
+  cursor: pointer;
+ 
+}
+
+.highlight {
+  color: white;
+  font-weight: 700;
+}
+
+
+/* Carousel- I'm still working on this CSS animation */
+#carousel {
+  margin: 0px;
+  display: grid;
+  background-position: center;
+  min-height: 500px;
+  height: 70vh;
+  background-color:#F1F1F1;
+ 
+
+}
+#carousel h1 {
+  text-align: center;
+
+}
+
+.box {
+  width: 350px;
+  height: 250px;
+  background-color: gray;
+  border-radius: 10px 10px 10px 10px;
+  padding: 50px;
+  margin-left: 10%;
+
+  
+}
+
+
+/* Typography */
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: rgb(8, 8, 8);
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: rgb(7, 7, 7);
+
+}
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+.subHeading h1 {
+  font-weight: bold;
+  font-size: larger;
+
+}
+
+/* footer */
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0px;
+  background-color: black;
+}
+#footer h1 {
+  width: 25%;
+  font-weight: 500;
+  color: white;
+  padding-left: 50px;
+}
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+  color: white;
+  padding-right: 20px;
+ 
+}
+
+.highlight {
+  color: white;
+  font-weight: 700;
+}
+
+/*Break Points */
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+ 
+  @media only screen and (max-width: 1000px) {
+    .resume {
+      display: none;
+    }
+   
+
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  
